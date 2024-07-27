@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="432" viewBox="0 0 720 432" version="1.1">
+ <g id="figure_1">
+  <g id="axes_1">
+   <g id="line2d_29">
+    <path d="M 0 300 
+L 50 280 
+L 100 290 
+L 150 250 
+L 200 200 
+L 250 210 
+L 300 180 
+L 350 190 
+L 400 220 
+L 450 180 
+L 500 100 
+L 550 150 
+L 600 120 
+L 650 140 
+L 700 130 
+" style="fill: none; stroke: #1f77b4; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+  </g>
+ </g>
+</svg>
