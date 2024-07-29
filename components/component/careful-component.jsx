@@ -63,7 +63,7 @@ export function CarefulpageComponent() {
                     <Badge variant="outline" className="mb-1">
                       변동폭↑
                     </Badge>
-                    <Link href={`/product/${product.id}`}>{product.name}</Link>
+                    <a>{product.name}</a>
                   </div>
                 </TableCell>
                 <TableCell>{product.netAsset}</TableCell>
