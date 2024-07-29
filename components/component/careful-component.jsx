@@ -1,22 +1,22 @@
 // MainpageComponent.jsx
 'use client';
 import { useEffect, useState } from "react";
-import { fetchProducts } from "@/pages/api/api";
+import { fetchCareful, fetchProducts } from "@/pages/api/api";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from "@/components/ui/table";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/components/ui/badge2";
 import Link from "next/link";
 import Image from 'next/image';
 
-export function MainpageComponent() {
+export function CarefulpageComponent() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const data = await fetchProducts();
+        const data = await fetchCareful();
         setProducts(data);
       } catch (error) {
         console.error('데이터를 가져오는 중 에러 발생: ', error);
@@ -29,18 +29,9 @@ export function MainpageComponent() {
   return (
     <div className="p-4">
       <div className="flex flex-col items-center space-y-4">
-        <h1 className="text-3xl font-bold">투자상품찾기</h1>
-        <h3>투자상품찾기 페이지는 주가 상승확률이 가장 높은 KOSPI 상위의 종목들을 추천해주는 서비스입니다.</h3>
-        <div className="flex space-x-2">
-          <Input type="text" placeholder="상품명 입력" className="w-64" />
-          <Button className="bg-[#f57c00] text-white">검색</Button>
-          <Button variant="outline" className="border-[#f57c00] text-[#f57c00]">
-            <SettingsIcon className="w-6 h-6" />
-          </Button>
-        </div>
-        <div className="flex space-x-2"></div>
-        <Link href={"/careful"}><Button className="bg-[#f17c00] text-white">주목할만한 종목</Button></Link>
-        
+        <h1 className="text-3xl font-bold">주목할만한 종목</h1>
+        <div className="flex space-x-2"> <h3>주목할만한 종목 페이지는 한 달 내에 이상 주가가 있는 종목들을 표시해주는 서비스입니다.</h3></div>
+        <Link href={"/"}><Button className="bg-[#f17c00] text-white">투자상품찾기</Button></Link>
       </div>
       <div className="mt-8">
         <div className="flex justify-between">
@@ -56,7 +47,7 @@ export function MainpageComponent() {
               <TableHead>선택</TableHead>
               <TableHead>상품명</TableHead>
               <TableHead>시가총액(천원)</TableHead>
-              <TableHead>주가상승확률</TableHead>
+              <TableHead>최근 변동폭(한달)</TableHead>
               <TableHead>그래프추이</TableHead>
               <TableHead>관심</TableHead>
             </TableRow>
@@ -70,7 +61,7 @@ export function MainpageComponent() {
                 <TableCell>
                   <div className="flex flex-col">
                     <Badge variant="outline" className="mb-1">
-                      KOSPI
+                      변동폭↑
                     </Badge>
                     <Link href={`/product/${product.id}`}>{product.name}</Link>
                   </div>

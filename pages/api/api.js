@@ -59,7 +59,65 @@ export const fetchProducts = async () => {
     throw error;
   }
 };
+export const fetchCareful = async () => {
+  try {
+    // 실제 API 호출 대신 예시 데이터를 반환합니다.
+    const exampleData = [
+      {
+        id: 1,
+        name: 'HD현대일렉트릭',
+        netAsset: "11,520,000,000",
+        startDate: '2024-05-31',
+        yieldDifference: '/c1.svg', // Updated to reference public SVG file
+        stockPriceIncreaseProbability: "23.74%",
+      },
+      {
+        id: 2,
+        name: 'HD현대중공업',
+        netAsset: "18,420,000,000",
+        startDate: '2024-05-31',
+        yieldDifference: '/c2.svg', // Updated to reference public SVG file
+        stockPriceIncreaseProbability: "-6.02%",
+      },
+      {
+        id: 3,
+        name: 'KT&G',
+        netAsset: "9,529,000,000",
+        startDate: '2024-05-31',
+        yieldDifference: '/c3.svg', // Updated to reference public SVG file
+        stockPriceIncreaseProbability: "-7.37%",
+      },
+      {
+        id: 4,
+        name: 'LG에너지솔루션',
+        netAsset: "72,501,000,000",
+        startDate: '2024-05-31',
+        yieldDifference: '/c4.svg', // Updated to reference public SVG file
+        stockPriceIncreaseProbability: "-14.91%",
+      },
+      {
+        id: 5,
+        name: 'LG전자',
+        netAsset: "16,822,000,000",
+        startDate: '2024-05-31',
+        yieldDifference: '/c5.svg', // Updated to reference public SVG file
+        stockPriceIncreaseProbability: "13.66%",
+      }
+    ];
 
+    return exampleData.map(product => ({
+      id: product.id,
+      name: product.name, //이름
+      netAsset: product.netAsset, //총자산
+      startDate: product.startDate, //기준일
+      yieldDifference: product.yieldDifference, // SVG 데이터 수익률추이
+      stockPriceIncreaseProbability: product.stockPriceIncreaseProbability // 주가 상승 확률
+    }));
+  } catch (error) {
+    console.error('데이터를 가져오는 중 에러 발생:', error);
+    throw error;
+  }
+};
 export const fetchProductDetails = async (id) => {
   try {    
     let exampleData = {
