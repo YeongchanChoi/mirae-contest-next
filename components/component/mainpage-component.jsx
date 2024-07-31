@@ -27,7 +27,7 @@ export function MainpageComponent() {
   }, []);
 
   return (
-    <div className="p-4">
+    <div className="p-4 relative">
       <div className="flex flex-col items-center space-y-4">
         <h1 className="text-3xl font-bold">투자상품찾기</h1>
         <h3>투자상품찾기 페이지는 주가 상승확률이 가장 높은 KOSPI 상위의 종목들을 추천해주는 서비스입니다.</h3>
@@ -40,7 +40,6 @@ export function MainpageComponent() {
         </div>
         <div className="flex space-x-2"></div>
         <Link href={"/careful"}><Button className="bg-[#f17c00] text-white">주목할만한 종목</Button></Link>
-        
       </div>
       <div className="mt-8">
         <div className="flex justify-between">
@@ -48,7 +47,7 @@ export function MainpageComponent() {
             <Button variant="outline">비교하기</Button>
             <Button className="bg-[#f57c00] text-white">관심담기</Button>
           </div>
-          <span>2024.05.31기준</span>
+          <span>~2024.05.31 기준</span>
         </div>
         <Table className="mt-4">
           <TableHeader>
@@ -87,6 +86,9 @@ export function MainpageComponent() {
             ))}
           </TableBody>
         </Table>
+      </div>
+      <div className="absolute bottom-4 right-4 text-sm text-gray-500">
+        2023.06.01~2024.05.31까지의 데이터를 학습 시킨 모델로 2024.06.01의 등락을 예측한 지표입니다.
       </div>
     </div>
   );

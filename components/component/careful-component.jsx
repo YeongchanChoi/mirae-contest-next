@@ -39,7 +39,7 @@ export function CarefulpageComponent() {
             <Button variant="outline">비교하기</Button>
             <Button className="bg-[#f57c00] text-white">관심담기</Button>
           </div>
-          <span>2024.05.31기준</span>
+          <span>~2024.05.31 기준</span>
         </div>
         <Table className="mt-4">
           <TableHeader>
@@ -78,6 +78,8 @@ export function CarefulpageComponent() {
             ))}
           </TableBody>
         </Table>
+      </div>      <div className="absolute bottom-4 right-4 text-sm text-gray-500">
+        2023.06.01~2024.05.31까지의 데이터를 학습 시킨 모델로 2024.06.01의 등락을 예측한 지표입니다.
       </div>
     </div>
   );
