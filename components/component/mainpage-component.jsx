@@ -87,8 +87,9 @@ export function MainpageComponent() {
           </TableBody>
         </Table>
       </div>
-      <div className="absolute bottom-4 right-4 text-sm text-gray-500">
-        2023.06.01~2024.05.31까지의 데이터를 학습 시킨 모델로 2024.06.01의 등락을 예측한 지표입니다.
+      <div className="absolute bottom-4 right-4 text-xs text-gray-500">
+      <div>2023.06.01~2024.05.31까지의 데이터를 학습 시킨 모델로 2024.06.01의 등락을 예측한 지표입니다.</div>
+      <div>업데이트를 통해 실시간 서비스 구현 예정입니다.</div>
       </div>
     </div>
   );
