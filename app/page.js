@@ -1,10 +1,5 @@
-import { MainpageComponent } from "@/components/component/mainpage-component";
-import Image from "next/image";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <main>
-      <MainpageComponent></MainpageComponent>
-    </main>
-  );
+  redirect("/mainpage");
 }
