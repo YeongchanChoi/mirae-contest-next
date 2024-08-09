@@ -5,8 +5,12 @@ export function Infocomp() {
         <div className="text-center space-y-4">
           <h1 className="text-3xl font-bold">팀 소개</h1>
           <p className="text-muted-foreground max-w-md mx-auto">
-            저희는 주식 서비스를 이용하는 고객들의 조금 더 넓은 시야를 위해 등락
-            예측 서비스를 제작하였습니다.
+            저희 팀은 주식 시장의 변화 속에서 고객들이 한 발 앞서 나아갈 수
+            있도록, 데이터와 인사이트를 결합한 등락 예측 서비스를 개발했습니다.
+            이 서비스는 단순한 숫자 이상의 의미를 전달하며, 투자자들에게 보다
+            넓은 시야와 정확한 판단력을 제공합니다. 저희는 고객들이 보다
+            안정적이고 현명한 결정을 내릴 수 있도록, 혁신적이고 신뢰할 수 있는
+            도구를 제시하고자 합니다.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
