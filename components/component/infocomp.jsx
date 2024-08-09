@@ -28,7 +28,7 @@ export function Infocomp() {
             <h3 className="text-xl font-bold mt-4">최영찬</h3>
             <p className="text-muted-foreground">웹 개발, 데이터 수집</p>
             <p className="mt-2 text-sm text-muted-foreground">
-              웹 개발 전반, 모델에 사용된 데이터 크롤링, 정제
+              웹 개발 전반, 모델에 사용된 데이터 크롤링, 전처리
             </p>
           </div>
           <div className="bg-card rounded-lg shadow-md p-6 flex flex-col items-center text-center">
@@ -45,7 +45,7 @@ export function Infocomp() {
             <h3 className="text-xl font-bold mt-4">정재호</h3>
             <p className="text-muted-foreground">모델 개발</p>
             <p className="mt-2 text-sm text-muted-foreground">
-              전체 기획, LSTM 모델을 활용하여 모델 개발
+              전체 기획, 데이터 전처리, LSTM 모델을 활용하여 모델 개발
             </p>
           </div>
         </div>
