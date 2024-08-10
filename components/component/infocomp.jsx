@@ -48,6 +48,23 @@ export function Infocomp() {
               전체 기획, 데이터 전처리, LSTM 모델을 활용하여 모델 개발
             </p>
           </div>
+          <div className="bg-card rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+            <div className="w-24 h-24 rounded-full overflow-hidden">
+              <img
+                src=""
+                alt=""
+                width={96}
+                height={96}
+                className="object-cover"
+                style={{ aspectRatio: "96/96", objectFit: "cover" }}
+              />
+            </div>
+            <h3 className="text-xl font-bold mt-4">우도혁</h3>
+            <p className="text-muted-foreground">모델 개발</p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              LSTM 모델을 활용하여 모델 개발 전반
+            </p>
+          </div>
         </div>
       </div>
     </div>
